@@ -1,190 +1,214 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
 
+/* ===zerando tudo=== */
+
 * {
-    padding: 0;
-    margin: 0;
+  padding: 0;
+  margin: 0;
 }
+
+
+/* ===Definindo a cor de fundo e a fonte=== */
 
 body {
-    background-color: #080808;
-    color: #F5F5F5;
-    font-family: "Roboto", sans-serif;
-    width: 100%;
-    height: 100vh;
-    
+  background-color: #080808;
+  color: #F5F5F5;
+  font-family: "Roboto", sans-serif;
+  width: 100%;
+  height: 100vh;
+
 }
 
+
+/* === Criando o menu de navegações no header dentro do body === */
+
 .nav__container {
-    background-color: #1E1E1E;
-    width: 100%;
-    height: 100px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: fixed;
+  background-color: #1E1E1E;
+  width: 100%;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
 }
 
 .nav__box {
-    width: 80%;
-    display: flex;
-    justify-content: space-between;
-    list-style-type: none;
-    
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+
 }
 
 .nav__box--link {
-    color: #F5F5F5;
-    text-decoration: none;
-    font-size: 1.4rem;
-    transition: 0.3s;
+  color: #F5F5F5;
+  text-decoration: none;
+  font-size: 1.4rem;
+  transition: 0.3s;
 }
 
 .nav__box--link:hover {
-    color: #D3AA6B;
-    text-decoration:underline;
-    font-size: 1.5rem;
+  color: #D3AA6B;
+  text-decoration: underline;
+  font-size: 1.5rem;
 }
 
+
+/* === Criando a 1° section a Home da pagina === */
+/* Para responsividade a mais usei min-height o resto e no @media */
+
 .main-home__container {
-    width: 100%;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    gap: 3rem;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
 }
 
 .home__box {
-    width: 80%;
-    margin-left: 3em;
-    margin-right: 3em;
-    margin-top: 10%;
-    display: flex;
-    gap: 4rem;
+  width: 80%;
+  margin-left: 3em;
+  margin-right: 3em;
+  margin-top: 10%;
+  display: flex;
+  gap: 4rem;
 }
 
 .home__box--imagem {
-    width: 13rem;
-    height: 13rem;
-    border-radius: 50%;
-    border: #D3AA6B solid 0.2em;
-    margin-left: 4em;
+  width: 13rem;
+  height: 13rem;
+  border-radius: 50%;
+  border: #D3AA6B solid 0.2em;
+  margin-left: 4em;
 }
 
 .home__box--h1 {
-    margin-top: 2rem;
-    font-size: 4rem;
+  margin-top: 2rem;
+  font-size: 4rem;
 }
 
 .home__box--h1 span {
-    color: #D3AA6B;
+  color: #D3AA6B;
 }
 
 
 .home__box--p {
-    font-size: 1.4rem;
-    text-align: justify;
-    width: 90%;
-    margin-left: 4em;
+  font-size: 1.4rem;
+  text-align: justify;
+  width: 90%;
+  margin-left: 4em;
 }
 
+
+/* === Criando a 2° section sobre mim da pagina eu reaporveitei o tamanho e a cor dos paragrafos da 1° section, mas usando o padrão bem pode ser podificada em eventuais atualizações. ===*/
+
 .main-sobremim__container {
-    width: 100%;
-    min-height: 100vh;
+  width: 100%;
+  min-height: 100vh;
 }
 
 .sobremim__box {
-    width: 100%;
-    display: grid;
-    gap: 3rem;
+  width: 100%;
+  display: grid;
+  gap: 3rem;
 }
 
 .sobremim__box--h2 {
-    margin-top: 10%;
-    margin-left: 1.7em;
-    font-size: 3.3rem; 
-    color: #D3AA6B;
+  margin-top: 10%;
+  margin-left: 1.7em;
+  font-size: 3.3rem;
+  color: #D3AA6B;
 }
 
 .sobremim__box--lista {
-    list-style: none;
-    display: flex;
-    justify-content: space-around;
-    margin-top: 5rem;
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 5rem;
 }
 
 .sobremim__box--img {
-    width: 5em;
-    transition: transform 0.3s ease;
+  width: 5em;
+  transition: transform 0.3s ease;
 }
 
 .sobremim__box--img:hover {
-    transform: scale(1.2);
+  transform: scale(1.2);
 }
 
+
+/* === Criando a 3° section Meus Projetos na pagina. */
+/* usei as configurações de texto aqui também pegando da 1° section */
+
 .meusprojetos-main__container {
-    width: 100%;
-    min-height: 100vh;
-    
+  width: 100%;
+  min-height: 100vh;
+
 }
 
 .meusprojetos__box {
-    display: grid;
-    gap: 3rem;
+  display: grid;
+  gap: 3rem;
 }
 
 
 .meusprojetos__lista {
-    list-style: none;
-    display: flex;
-    margin-left: 5.7rem;
+  list-style: none;
+  display: flex;
+  margin-left: 5.7rem;
 }
 
 .meusprojetos__lista--lower {
-    width: 65%;
-    text-align: justify;
-    margin-bottom: 1.4rem;
+  width: 65%;
+  text-align: justify;
+  margin-bottom: 1.4rem;
 }
 
 .meusprojetos__lista--img {
-    width: 65%;
-    transition: transform 0.3s ease;
+  width: 65%;
+  transition: transform 0.3s ease;
 }
 
 .meusprojetos__lista--img:hover {
-    transform: scale(1.1);
+  transform: scale(1.1);
 }
 
+/* === criando o Footer na pagina */
+/* Nada aproveitado cama um tem sua class, então pode ser atualizado a vontade diretamente. === */
+
 .footer__container {
-    background-color: #1E1E1E;
-    padding: 2rem;
-    max-width: 100vw;
-    margin-top: 1.2rem;
+  background-color: #1E1E1E;
+  padding: 2rem;
+  max-width: 100vw;
+  margin-top: 1.2rem;
 }
 
 .footer__box {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .footer__box--lista {
-    list-style: none;
-    display: flex;
-    gap: 3rem;
+  list-style: none;
+  display: flex;
+  gap: 3rem;
 }
 
 .footer__box--p {
-    color: #949393;
+  color: #949393;
 }
 
 .footer__box--img {
-    transition: transform 0.3s ease;
+  transition: transform 0.3s ease;
 }
 
 .footer__box--img:hover {
-    transform: scale(1.2);
+  transform: scale(1.2);
 }
+
+/* === Fazendo a responsividade para tabletes === */
 
 @media (max-width: 1024px) {
   * {
@@ -310,8 +334,6 @@ body {
     width: 1.8rem;
   }
 }
-
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
 * {
   padding: 0;
@@ -480,115 +502,6 @@ body {
 
 .footer__box--img:hover {
   transform: scale(1.2);
-}
-
-
-@media (max-width: 1024px) {
-  .nav__container {
-    background-color: #1E1E1E;
-    padding: 1rem 0;
-    display: flex;
-    justify-content: center;
-  }
-
-  .nav__box {
-    width: 100%;
-    max-width: 900px;
-    margin: 0 auto;
-    padding: 0 1rem;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 2rem;
-    flex-wrap: wrap;
-  }
-
-  .nav__box--link {
-    font-size: 1.2rem;
-    text-align: center;
-  }
-
-  .home__box {
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    padding: 2rem 1rem;
-    gap: 2rem;
-  }
-
-  .home__box--imagem {
-    margin-top: 6rem;
-  }
-
-  .home__box--h1 {
-    font-size: 2.5rem;
-    text-align: center;
-  }
-
-  .home__box--p {
-    font-size: 1.2rem;
-    text-align: justify;
-    width: 90%;
-    margin: 0 auto;
-  }
-
-  .sobremim__box {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    gap: 2rem;
-  }
-
-  .sobremim__box--h2 {
-    font-size: 2.5rem;
-    text-align: center;
-  }
-
-  .meusprojetos__box {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    gap: 2rem;
-  }
-
-  .meusprojetos__lista {
-    flex-direction: column;
-    align-items: center;
-    gap: 2rem;
-    margin: 0 auto;
-    padding: 0 1rem;
-  }
-
-  .meusprojetos__lista--img,
-  .meusprojetos__lista--lower {
-    width: 90%;
-    text-align: justify;
-    margin: 0 auto;
-  }
-
-  .footer__box {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    gap: 1.5rem;
-  }
-
-  .footer__box--lista {
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 1.5rem;
-  }
-
-  .footer__box--p {
-    text-align: center;
-  }
-
-  .footer__box--img {
-    width: 1.8rem;
-  }
 }
 
 

@@ -1,81 +1,42 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Meu Portfólio</title>
+    <title>Em Manutenção</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        .container {
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        p {
+            font-size: 1.2rem;
+        }
+    </style>
 </head>
+
 <body>
-    <header>
-        <nav class="nav__container">
-            <ul class="nav__box">
-                <li ><a href="#home" class="nav__box--link">Home</a></li>
-                <li ><a href="#sobremim" class="nav__box--link">Sobre mim</a></li>
-                <li ><a href="#meusprojetos" class="nav__box--link">Meus Projetos</a></li>
-                <li ><a href="#contatos" contatos class="nav__box--link">Contatos</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <!-- Parte 1 -->
-        <section class="main-home__container" id="home">
-            <div class="home__box">
-                <img class="home__box--imagem" src="img/perfil.jpeg" alt="imagem de perfil">
-                <h1 class="home__box--h1"><span>Olá,</span> eu sou <br>Washington <span>Guilherme</span></h1>
-                
-            </div>
-            <p class="home__box--p">Seja muito bem-vindo ao meu portfólio digital! Eu sou       Washington Guilherme, estudante do 5º período de Engenharia de Software, apaixonado por tecnologia, desenvolvimento web e por transformar conhecimento em soluções reais. Este site foi criado com o objetivo de reunir minha trajetória acadêmica, minhas habilidades técnicas e os projetos que venho desenvolvendo ao longo da minha formação. Logo na página inicial, você encontrará uma breve apresentação sobre mim e minha jornada até aqui. Tenho experiência com desenvolvimento web utilizando HTML, CSS e JavaScript, além de sólida base em lógica de programação com Python e domínio em banco de dados MySQL. Estou sempre buscando aplicar o que aprendo em projetos práticos, com o objetivo de evoluir como desenvolvedor e contribuir com ideias que façam a diferença. Na seção “Sobre mim”, compartilho com mais profundidade minha formação e os cursos que venho realizando. Já concluí meus estudos em lógica de programação, o que me proporcionou uma base sólida para compreender algoritmos e resolver problemas de forma estruturada. Atualmente, estou me aprofundando em Python por meio das aulas do professor Gustavo Guanabara, explorando suas aplicações práticas e versatilidade como linguagem. Também finalizei um curso de banco de dados com foco em MySQL, onde aprendi a criar, manipular e consultar dados de forma eficiente. Além disso, estou estudando modelagem de dados, compreendendo os conceitos de modelo conceitual, lógico e físico, e como aplicá-los na estruturação de sistemas bem planejados e escaláveis. Logo abaixo, você verá os ícones das tecnologias que fazem parte do meu repertório técnico — HTML, CSS, JavaScript, Python e SQL — representando as ferramentas que venho dominando e aplicando em meus estudos e projetos. Na seção “Meus Projetos”, você encontrará os trabalhos que venho desenvolvendo para colocar em prática tudo o que aprendo. Cada projeto é uma oportunidade de experimentar, errar, aprender e crescer. Em breve, essa área será expandida com mais exemplos reais e funcionais, mostrando minha evolução como desenvolvedor. Por fim, a seção “Contatos” será o espaço dedicado para quem quiser entrar em contato comigo — seja para oportunidades de estágio, parcerias, freelas ou simplesmente para trocar ideias sobre tecnologia. Meu objetivo é estar acessível e aberto a colaborações que me desafiem e me permitam aprender com profissionais da área.
-                </p>
-            
-        </section>
-
-        <!-- Parte 2 -->
-        <section class="main-sobremim__container" id="sobremim">
-            <div class="sobremim__box">
-                <h2 class="sobremim__box--h2">Sobre mim</h2>
-                <p class="home__box--p">Sou estudante em formação na área de tecnologia, atualmente realizando um curso de Programador Web, onde estou aprendendo os fundamentos do desenvolvimento com HTML e CSS. Em breve, iniciarei os estudos em JavaScript para ampliar minhas habilidades em criação de interfaces dinâmicas e interativas. Já concluí meus estudos em lógica de programação, o que me proporcionou uma base sólida para compreender algoritmos e resolver problemas de forma estruturada. Atualmente, estou aprofundando meus conhecimentos em Python, por meio das aulas do professor Gustavo Guanabara, explorando suas aplicações práticas e versatilidade como linguagem de programação. Também concluí um curso de banco de dados com foco em MySQL, onde aprendi a criar, manipular e consultar dados de forma eficiente. Além disso, estou estudando modelagem de dados, compreendendo os conceitos de modelo conceitual, lógico e físico, e como aplicá-los na estruturação de sistemas bem planejados e escaláveis. Estou em constante evolução, buscando aplicar o que aprendo em projetos práticos e me tornar um desenvolvedor completo. Tenho interesse em participar de iniciativas que me desafiem, me permitam aprender com profissionais da área e contribuir com soluções reais.</p>
-                <ul class="sobremim__box--lista">
-                    <li><img class="sobremim__box--img" src="img/iconeJs.png" alt="icone JavaScript"></li>
-                    <li><img class="sobremim__box--img" src="img/iconeCss.png" alt="icone css"></li>
-                    <li><img class="sobremim__box--img" src="img/iconeHtml.png" alt="icone html"></li>
-                    <li><img class="sobremim__box--img" src="img/iconePy.png" alt=" icone python"></li>
-                    <li><img class="sobremim__box--img" src="img/iconeSQL.png" alt="icone sql"></li>
-                </ul>
-            </div>
-        </section>
-
-        <!-- Parte 3 -->
-        <section class="meusprojetos-main__container" id="meusprojetos">
-            <div class="meusprojetos__box">
-                <h2 class="sobremim__box--h2">Meus Projetos</h2>
-                <p class="home__box--p meusprojetos__box--p">Você pode clicar no projeto caso queira visualizar ele online. Se quiser ver o código-fonte completo, basta ir até a aba "Contato" na minha página e clicar no ícone do GitHub, que leva direto para o repositório — não precisa saber meu nome de usuário.</p>
-                <ul class="meusprojetos__lista">
-                    <li>
-                        <p class="meusprojetos__lista--lower">Projeto desenvolvido em sala de aula no SENAC, com orientação do professor, como parte das atividades práticas do curso de Programador Web. O foco foi criar um site responsivo utilizando HTML e CSS, aplicando conceitos de estruturação e design adaptável.</p>
-                        <a href="https://washingtongui.github.io/Site_Responsivo/" target="_blank"><img class="meusprojetos__lista--img" src="img/site_responsivo.png" alt="Projeto de um site responsivo"></a>
-                    </li>
-                    <li>
-                        <p class="meusprojetos__lista--lower">Projeto criado com base em aulas de professores no YouTube, como forma de aprofundar meus conhecimentos em HTML e CSS fora do ambiente de sala de aula. O site simula uma página de apresentação para uma cafeteria, com foco em layout moderno e visual atrativo.</p>
-                        <img class="meusprojetos__lista--img" src="img/site_cafe.png" alt="">
-                    </li>
-                </ul>    
-            </div>
-            
-        </section>
-    </main>
-
-    <footer>
-        <section class="footer__container" id="contatos">
-           <div class="footer__box">
-                <p class="footer__box--p">© 2025 Washington Guilherme</p>
-                <ul class="footer__box--lista">
-                    <li><a href="https://github.com/washingtongui" target="_blank"><img class="footer__box--img" src="img/icone_github.png" alt="icone GitHub"></a></li>
-                    <li><a href="https://mail.google.com/mail/?view=cm&fs=1&to=washingtogui678@gmail.com" target="_blank"><img class="footer__box--img" src="img/icone_gmail.png" alt="icone gmail"></a></li>
-                    <li><a href="https://www.linkedin.com/in/washington-guilherme-da-s-gomes-753705331" target="_blank"><img class="footer__box--img" src="img/icone_linkdlin.png" alt="icone icone_linkdlin"></a></li>
-                </ul>
-            </div>
-        </section>
-    </footer>
+    <div class="container">
+        <h1>Estamos em Manutenção</h1>
+        <p>Desculpe pelo transtorno. Voltaremos em breve!</p>
+    </div>
 </body>
+
 </html>

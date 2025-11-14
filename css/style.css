@@ -209,7 +209,7 @@ body {
 }
 
 /* === Fazendo a responsividade para tabletes === */
-@media (max-width: 1024px) {
+@media (max-width: 978px) {
   * {
     box-sizing: border-box;
   }
